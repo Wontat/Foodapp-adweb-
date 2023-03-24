@@ -1,0 +1,63 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+mat-card {
+  color: #424242;
+  background: #fff;
+
+  .mat-card-subtitle {
+    color: #424242;
+  }
+
+  .card-detail {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 8px;
+
+  .favourites {
+    display: flex;
+    overflow: auto;
+
+    mat-card {
+      min-width: 256px;
+      margin-right: 16px;
+    }
+  }
+
+  .search {
+    margin-top: 16px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
+  }
+
+  .tab-img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .tab-txt {
+    color: black;
+    text-transform: uppercase;
+  }
+}
+
+.mat-card-image {
+  max-height: 256px;
+  object-fit: cover;
+}

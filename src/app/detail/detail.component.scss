@@ -1,0 +1,25 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+
+  mat-card {
+    color: #424242;
+    background: #fff;
+
+    .mat-card-subtitle {
+      color: #424242;
+    }
+
+    .card-detail {
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

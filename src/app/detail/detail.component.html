@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Back button" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span>Food App</span>
+</mat-toolbar>
+<div class="container">
+  <mat-card>
+    <img mat-card-image [src]="item.image" alt="" />
+    <mat-card-content>
+      <div class="card-detail">
+        <div>
+          <mat-card-title [innerHTML]="item.name"></mat-card-title>
+          <mat-card-subtitle
+            [innerHTML]="item.price | currency: 'INR'"
+          ></mat-card-subtitle>
+        </div>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Add to bag</button>
+        </mat-card-actions>
+      </div>
+      <mat-divider inset></mat-divider>
+      <div class="card-detail">
+        <span>Category: {{ item.category }}</span>
+        <span>{{ item.rating }} Rating, ({{ item.reviews }} Reviews)</span>
+      </div>
+      <h3>DETAILS</h3>
+      <p [innerHTML]="item.details"></p>
+    </mat-card-content>
+  </mat-card>
+</div>
